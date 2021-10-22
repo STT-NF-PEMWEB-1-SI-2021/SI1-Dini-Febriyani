@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pesanan Barang</title>
+</head>
+<body>
+    <img src="arrow-left-bold-outline.png" alt="arrow">
+    <img src="arrow-right-bold-outline.png" alt="arrow2">
+    <img src="alpha-x.png" width="30" alt="alphabet">
+    <img src="home-variant.png" alt="home">
+    <input style="width: 800px;" type="url" autocomplete="url">
+    <input type="search" value="search here">
+    <img style="position: relative; width: 20px;" src="magnify.png" alt="search">
+    <hr>
+    <div>
+        <table style="width: 100%;">
+            <tr>
+                <th style="text-align: left; border: 0px; width: 80px; padding: 5px;background-color: rgb(199, 176, 241)">Home</th>
+                <th style="text-align: left; border: 0px; width: 80px; padding: 5px;background-color: rgb(199, 176, 241)">Generate Link</th>
+                <th style="text-align: left; border: 0px; width: 80px; padding: 5px;background-color: rgb(199, 176, 241)">Transaction History</th>
+                <th style="text-align: left; border: 0px; width: 80px; padding: 5px;background-color: rgb(199, 176, 241)">Policy</th>
+                <th style="text-align: left; border: 0px; width: 80px; padding: 5px;background-color: rgb(199, 176, 241)">Logout</th>
+            </tr>
+        </table>
+    </div>    
+    <form action="formaction.html" method="post" enctype="multipart/form-data">
+        <table style="display: grid; border-bottom: 3px solid rgb(218, 195, 238);">
+            <tr>
+                <td>
+                    <label>
+                        <img src="macbook.jpg" alt="mac" width="120" height="120"><br>
+                        <input type="file" name="photo">
+                    </label>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <form>
+        <h2>Form Registration</h2>
+        <table>
+            <tr>
+                <td>Title Here</td>
+                <td>:</td>
+                <td><input style="width: 300px;" type="text" value="Macbook Air €800"></td>
+            </tr>
+            <tr>
+                <td>Description</td>
+                <td>:</td>
+                <td><input style="width: 300px; height: 100px;" value="Year: 2009"></td>
+            </tr>
+            <tr>
+                <td>Account Number</td>
+                <td>:</td>
+                <td>
+                    <input style="width: 300px;" type="tel" value="123-456-789-0" >
+                </td>
+            </tr>
+            <tr>
+                <td>Bank</td>
+                <td>:</td>
+                <td>
+                    <select style="width: 300px;">
+                        <option>HSBC</option>
+                        <option>MANDIRI</option>
+                        <option>BCA</option>
+                        <option>BNI</option>
+                        <option>DANAMONC</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Account Holder</td>
+                <td>:</td>
+                <td><input style="width: 300px;" type="text" name="Name Here" value="Name here"></td>
+            </tr>
+            <tr>
+                <td>Transaction</td>
+                <td>:</td>
+                <td><input style="width: 30px; height: 20px; padding: 5px;" type="number" value="1"><br>
+                    <a>* if the transaction is for 3 person, choose 3 from the drop-down list</a><br>
+                        <input type="checkbox" id="vehicle1" name="vehicle1" value="Mobile">
+                        <label for="vehicle1">Send to Mobile Phone</label><br>
+                        <input type="checkbox" id="vehicle2" name="vehicle2" value="Mobile">
+                        <label for="vehicle1">Send to Email</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Send to Mobile Phone</td>
+                <td>:</td>
+                <td>
+                    <input style="width: 300px;" type="text" value="1234567890, 1234567891">
+                </td>
+            </tr>
+            <tr>
+                <td>Send to Email</td>
+                <td>:</td>
+                <td>
+                    <input style="width: 300px;" type="email" value="mfmm2g13@soton.ac.uk, fys_06@yahoo.com">
+                </td>
+            </tr>
+        </table>
+        <p>
+            <input style="background-color: rgb(192, 124, 255);" type="submit" value="Generate Link">
+        </p>
+    </form>
+</body>
+</html>
