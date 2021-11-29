@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEXBOX 6.2</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+        }
+        nav{
+            width: 20%;
+            background-color: rgb(150, 230, 177);
+            border-width: 0;
+            border-style: solid;
+            height: 550px;
+            order: -1;
+            margin-left: 5px;
+        }
+        header{
+            width: 78%;
+            background-color: rgb(107, 191, 214);
+            border-width: 0;
+            border-style: solid;
+            height: 125px;
+            position: absolute;
+        }
+        .main2{
+            display: flex;
+        }
+        article{
+            background-color: rgb(200, 243, 229);
+            border-width: 0;
+            border-style: solid;
+            width: 60%;
+            height: 300px;
+            position: absolute;
+            top: 133px;
+        }
+        aside{
+            background-color: rgb(202, 236, 195);
+            border-width: 0;
+            border-style: solid;
+            width: 18.4%;
+            height: 300px;
+            position: absolute;
+            margin-top: 125px;
+            left: 80.4%;
+        }
+        footer{
+            background-color: rgb(160, 209, 198);
+            border-width: 0;
+            width: 78%;
+            height: 125px;
+            position: absolute;
+            margin-top: 425px;
+
+        }
+    </style>
+</head>
+<body>
+    <nav>Nav</nav>
+    <div>
+        <header>Header</header>
+        <div class="main2">
+        <article>Article</article>
+        <aside>Aside</aside>
+        </div>
+        <footer>Footer</footer>
+    </div>
+</body>
+</html>

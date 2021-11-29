@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEXBOX 6.3</title>
+    <style>
+        *{
+            box-sizing: border-box
+        }
+        body{
+            background-color: rgb(151, 156, 226);
+        }
+        header{
+            background-color: aquamarine;
+            border-width: 0;
+            border-style: solid;
+            height: 100px;
+            margin-bottom: 25px;
+        }
+        .main{
+            display: flex;
+            margin-bottom: 25px;
+        }
+        #container{
+            margin-top: 35px;
+            margin-left: 35px;
+            margin-bottom: 35px;
+            margin-right: 35px;
+        }
+        aside{
+            background-color: rgb(196, 255, 240);
+            border-width: 0;
+            border-style: solid;
+            width: 25%;
+            height: 400px;
+        }
+        article{
+            background-color: rgb(164, 217, 219);
+            border-width: 0;
+            border-style: solid;
+            width: 75%;
+            height: 400px;
+            margin-left: 25px;
+        }
+        footer{
+            background-color: aquamarine;
+            border-width: 0;
+            border-style: solid;
+            height: 100px;
+        }
+        #g1{
+            width: 110px;
+            height: 120px;
+            border: 3px groove rgb(243, 243, 243);
+        }
+        #g2{
+            width: 120px;
+            height: 120px;
+            border: 3px groove rgb(243, 246, 248);
+        }
+        #g3{
+            width: 120px;
+            height: 120px;
+            border: 3px groove rgb(248, 248, 248);
+        }
+        .image{
+            text-align: center;
+            margin-top: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+    <header>Header</header>
+    <div class="main">
+        <aside>Aside</aside>
+        <article>
+            <p>Article </p>
+            <div class="image">
+            <img src="ph1.jpg" id="g1" alt="">
+            <img src="ph2.jpg" id="g2" alt="">
+            <img src="ph3.jpg" id="g3" alt="">
+            </div>
+        </article>
+    </div>
+    <footer>Footer</footer>
+    </div>
+</body>
+</html>
