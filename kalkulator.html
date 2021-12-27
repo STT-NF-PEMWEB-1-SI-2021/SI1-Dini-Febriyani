@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkualtor</title>
+    <style>
+        .selectiv{
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>Kurs Rupiah - Mata Uang Asing</legend>
+        <div class="maindiv">
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>
+                            Masukkan Nilai
+                        </th>
+                        <th>
+                            Valas
+                        </th>
+                        <th>
+                            Nilai Rupiah
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" class="input1">
+                        </td>
+                        <td class="selectiv">
+                            <select class="kurs">
+                                <option value="Dollar US">Dollar Us - 9.915</option>
+                                <option value="Dollar Singapore">Dollar Singapore - 13.472</option>
+                                <option value="Ringgit Malaysia">Ringgit Malaysia - 874</option>
+                                <option value="Yen Jepang">Yen Jepang - 120</option>
+                                <option value="Euro">Euro 15.888</option>
+                                <option value="Riyal Arab Saudi">Riyal Arab Saudi - 3.592</option>
+                            </select>
+                        </td>
+                        <td>
+                            <p class="hasil"><input type="text"></p>
+                        </td>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </fieldset>
+    <script>
+        const nilai1 = document.querySelector(".input1");
+
+        const Selectkurs = document.querySelector(".kurs");
+
+        const hasil = document.querySelector(".hasil");
+
+        Selectkurs.addEventListener("click", function() {
+            console.log("select diklik");
+            
+        if (Selectkurs.value == "Dollar US") {
+            hasil.innerHTML = nilai1.value * 9915;
+        }
+        else if (Selectkurs.value == "Dollar Singapore") {
+            hasil.innerHTML = nilai1.value * 13472;
+        }
+        else if (Selectkurs.value == "Ringgit Malaysia") {
+            hasil.innerHTML = nilai1.value * 874;
+        }
+        else if (Selectkurs.value == "Yen Jepang") {
+            hasil.innerHTML = nilai1.value * 120;
+        }
+        else if (Selectkurs.value == "Euro") {
+            hasil.innerHTML = nilai1.value * 15888;
+        }
+        else if (Selectkurs.value == "Riyal Arab Saudi") {
+            hasil.innerHTML = nilai1.value * 3592;
+        }      
+        else {
+            hasil.innerHTML = nilai1.value * 0;
+        }
+        })
+    </script>
+</body>
+</html>
