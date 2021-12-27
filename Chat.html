@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(255, 249, 249);
+        }
+        .boxchat{
+            box-sizing: border-box;
+            border: 1.5px solid;
+            width: 450px;
+            height: 350px;
+            margin-bottom: 5px;
+            background-color: azure;
+
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="boxchat"></div>
+        <div><input type="text" class="chat1">
+            <button class="kirim">Send</button>
+        </div>
+    </main>
+    <script>
+        let hasilchat = document.querySelector(".boxchat");
+        const chat = document.querySelector(".chat1");
+        const btn = document.querySelector(".kirim");
+
+        btn.addEventListener("click", function(){
+            hasilchat.innerHTML = hasilchat.innerHTML + "<br>" + chat.value;
+            chat.value = "";
+        })
+    </script>
+</body>
+</html>
