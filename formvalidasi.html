@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <style>
+        .main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+        }
+        form{
+            border: 1px solid;
+            border-radius: 10px;
+            background-color: rgb(153, 209, 223);
+            width: 250px;
+            height: 300px;
+            padding: 20px;
+        }
+        div{
+            margin-bottom: 10px;
+        }
+        input{
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        button{
+            width: 100%;
+        }
+        #result{
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+    <script type="text/javascript">
+        function cek(){
+            let usn = document.getElementById("username").value;
+            let email = document.getElementById("email").value;
+            let jam = document.getElementById("time").value;
+            let tujuan = document.getElementById("direction").value;
+            let tick = document.getElementById("jumlah").value;
+
+
+            if(usn == ""){
+                alert("Terjadi Eror. Mohon Lengkapi Nama Anda")
+                return false
+            }
+            if(email == ""){
+                alert("Terjadi Eror. Mohon Lengkapi Email Anda");
+                return false
+            }
+            if(jam == ""){
+                alert("Terjadi Eror. Mohon Masukkan Waktu Dengan Lengkap");
+                return false
+            }
+            if(tujuan == ""){
+                alert("Terjadi Eror. Silahkan Isi Tujuan Keberangkatan Anda");
+                return false
+            }
+            if(tick == ""){
+                alert("Terjadi Eror. Mohon Masukkan Dengan Benar.");
+                return false
+            }
+
+            let uname = document.getElementById("uname").innerHTML = usn
+            let mail = document.getElementById("mail").innerHTML = email
+            let waktu = document.getElementById("waktu").innerHTML = jam
+            let tjuan = document.getElementById("tjuan").innerHTML = tujuan
+            let jumlah = document.getElementById("jml").innerHTML = tick
+            var btn = confirm("Apakah data sudah benar? ");
+            if (btn == true){
+                document.getElementById("uname").innerHTML = usn
+                document.getElementById("mail").innerHTML = email
+                document.getElementById("waktu").innerHTML = jam
+                document.getElementById("tjuan").innerHTML = tujuan
+                document.getElementById("jml").innerHTML = tick
+            }
+            
+        }
+
+    </script>
+</head>
+<body>
+    <div class="main">
+        <form action="#">
+            <div class="user">
+                <label for="username">Username</label><br>
+                <input type="text" placeholder="username" name="username" id="username" required>
+            </div>
+            <div class="em">
+                <label for="email">Email</label><br>
+                <input type="email" placeholder="email" name="email" id="email" required>
+            </div>
+            <div class="jam">
+                <label for="jam_keberangkatan">Jam Keberangkatan</label><br>
+                <input type="time" id="time" required>
+            </div>
+            <div class="tujuan">
+                <label for="tujuan">Tujuan Keberangkatan</label><br>
+                <input type="text" placeholder="Tujuan" name="tujuan" id="direction" required>
+            </div>
+            <div class="tiket">
+                <label for="tiket">Jumlah Tiket</label><br>
+                <input type="number" id="jumlah" required>
+            </div>
+            <div>
+                <button onclick="cek()" type="submit">Simpan</button>
+            </div>
+        </form>
+    </div>
+    <div id="result">
+        <H2>Hasil Formulir yang telah anda masukkan.</H2>
+        <p>Username Anda : <label id="uname"></label></p>
+        <p>Email Anda : <label id="mail"></label></p>
+        <p>Waktu Keberangkatan : <label id="waktu"></label></p>
+        <p>Tujuan Keberangkatan : <label id="tjuan"></label></p>
+        <p>Jumlah Tiket : <label id="jml"></label></p>
+    </div>
+</body>
+</html>
