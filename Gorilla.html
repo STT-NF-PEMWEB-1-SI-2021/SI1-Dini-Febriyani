@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gorilla</title>
+    <style>
+        img{
+            width: 200px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="tampilan" id="tampilan" onchange="pil()"></div>
+    <div class="box">
+        <select onchange="pil()" id="list">
+            <option value="not" id="notselected">Not Selected</option>
+            <option value="burung" id="burung">Burung</option>
+            <option value="singa" id="singa">Singa</option>
+            <option value="kelinci" id="kelinci">Kelinci</option>
+            <option value="ikan" id="ikan">Ikan</option>
+            <option value="domba" id="domba">Domba</option>
+            <option value="bebek" id="bebek">Bebek</option>
+        </select>
+    </div>
+
+    </div>
+    <script type="text/javascript">
+        function pil(){
+            var list = document.getElementById("list").value;
+            if(list == "burung"){
+                burung = document.getElementById("tampilan").innerHTML = '<img src="img/burung.jpg">'
+                alert("ini gambar Burung!");
+            }
+            else if(list == "singa"){
+                singa = document.getElementById("tampilan").innerHTML = '<img src="img/singa.jpg">'
+                alert("ini gambar Singa!");
+            }
+            else if(list == "kelinci"){
+                singa = document.getElementById("tampilan").innerHTML = '<img src="img/kelinci.jpg">'
+                alert("ini gambar Kelinci!");
+            }
+            else if(list == "ikan"){
+                singa = document.getElementById("tampilan").innerHTML = '<img src="img/ikan.png">'
+                alert("ini gambar Ikan!");
+            }
+            else if(list == "domba"){
+                singa = document.getElementById("tampilan").innerHTML = '<img src="img/domba.jpg">'
+                alert("ini gambar Domba!");
+            }
+            else if(list == "bebek"){
+                singa = document.getElementById("tampilan").innerHTML = '<img src="img/bebek.jpg">'
+                alert("ini gambar Bebek!");
+            }
+        }
+    </script>
+</body>
+</html>
