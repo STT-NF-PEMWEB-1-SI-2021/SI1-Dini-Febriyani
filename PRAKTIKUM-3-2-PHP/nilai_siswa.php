@@ -17,7 +17,7 @@ include_once("libfungsi.php");
     $grade = grade($nilai_total);
     $predikat = predikat($grade);
     echo "<br/>Grade : ". $grade . " ". $predikat;
-    $hasil = kelulusan($nilai_total);
+    $hasil = lulus_matkul($nilai_total);
     echo '<br/> Dinyatakan '.$hasil;
 
 ?>
