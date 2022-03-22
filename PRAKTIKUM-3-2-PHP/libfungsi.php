@@ -7,7 +7,7 @@ function lulus_matkul($nilai_total){
  	}
 }
 
-function grade($nilai) {
+function grade($nilai_matkul) {
 	if ($nilai_matkul >= 85){
 		return "A";
 	}elseif($nilai_matkul >= 70){
