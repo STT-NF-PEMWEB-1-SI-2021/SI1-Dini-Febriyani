@@ -67,11 +67,11 @@
     </div>
     <?php
 
-    $nama_siswa = $_GET['nama_siswa'];
-    $mata_kuliah = $_GET['matkul_siswa'];
-    $nilai_uts = $_GET['uts_siswa'];
-    $nilai_uas = $_GET['uas_siswa'];
-    $nilai_tugas = $_GET['tuprak_siswa'];
+    $nama_siswa = isset ($_GET['nama_siswa']) ? $_GET['nama_siswa'] : " ";
+    $mata_kuliah = isset ($_GET['matkul_siswa']) ? $_GET['matkul_siswa'] : " ";
+    $nilai_uts = isset ($_GET['uts_siswa']) ? $_GET['uts_siswa'] : " ";
+    $nilai_uas = isset ($_GET['uas_siswa']) ? $_GET['uas_siswa'] : " ";
+    $nilai_tugas = isset ($_GET['tuprak_siswa']) ? $_GET['tuprak_siswa'] : " ";
 
         echo '</br>Nama : ' .$nama_siswa;
         echo '</br>Mata Kuliah : ' .$mata_kuliah;
